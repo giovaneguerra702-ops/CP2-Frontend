@@ -1,11 +1,3 @@
-/* --- Tela 2 Específica --- */
-.tela-2 {
-    height: 100vh;
-    background-color: #2F2F2F;
-    background-image: url("../imagens/bg_padrao.png");
-    display: flex;
-    flex-direction: column;
-}
 
 /* Ajustes no Header da Tela 2 */
 .header-icons-left, .header-icons-right {
@@ -17,15 +9,13 @@
 .h-icon { height: 10vw; }
 .h-icon-map { height: 14vw; }
 
-.col-regioes, article{
-    p{
-        padding-top: 2vw;
-        font-size: 1.1vw;
-    }
+.col-regioes p {
+    padding-top: 2vw;
+    font-size: 1.1vw;
+}
 
-    h2{
-        font-size: 2.2vw;
-    }
+.col-regioes h2 {
+    font-size: 2.2vw;
 }
 /* Grid de Mapas */
 .col-regioes {
