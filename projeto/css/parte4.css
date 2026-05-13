@@ -1,0 +1,120 @@
+/* --- Tela 4 (Berrys) --- */
+.tela-4 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header com as Berries espalhadas */
+.header-berrys h1 {
+    font-size: 5vw;
+}
+
+.berry-cluster img {
+    height: 15vh;
+    object-fit: contain;
+}
+
+/* Coluna Esquerda */
+.col-textos-berrys {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.card-intro-berrys {
+    height: 42vh;
+    padding: 2.5vh 2vw;
+    font-size: 1.1vw;
+    line-height: 1.4;
+}
+
+.img-arvore-berry {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 6vw;
+}
+
+/* Lista com ícones fora do card */
+.lista-berry-container {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.icones-lista-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.icones-lista-lateral img {
+    width: 3.5vw;
+}
+
+.card-lista-berrys {
+    flex: 1;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-lista-berrys h3 {
+    font-size: 1.6vw;
+    margin-bottom: 2vh;
+}
+
+.card-lista-berrys ul {
+    list-style: disc;
+    padding-left: 2vw;
+}
+
+.card-lista-berrys li {
+    font-size: 1.2vw;
+    margin-bottom: 1.5vh;
+}
+
+/* Coluna Direita */
+.col-imagens-berrys {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.card-grid-berries {
+    height: 38vh;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.campo-cultivo-wrapper {
+    position: relative;
+    height: 34vh;
+}
+
+.card-img-campo {
+    height: 100%;
+    border-radius: 30px;
+    border: 4px solid #ff4b4b;
+    overflow: hidden;
+    background: white;
+}
+
+.img-full-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-pa-flutuante {
+    position: absolute;
+    left: -2vw;
+    top: -2vh;
+    width: 8vw;
+    z-index: 10;
+    transform: rotate(-15deg);
+}

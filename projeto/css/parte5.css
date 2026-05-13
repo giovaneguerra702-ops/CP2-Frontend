@@ -1,0 +1,95 @@
+/* --- Tela 5 (Batalhas) --- */
+.tela-5 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.conteudo-layout-batalha {
+    display: flex;
+    padding: 3vh 4vw;
+    gap: 2vw;
+    flex: 1;
+    margin-right: 15vw; /* Espaço para a barra lateral fixa */
+}
+
+/* Coluna Esquerda */
+.col-batalha-esq {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.card-como-funciona {
+    height: 50vh;
+    padding: 2vh 2vw;
+}
+
+.card-como-funciona h2, .card-achando h2 {
+    font-size: 1.8vw;
+    margin-bottom: 1.5vh;
+}
+
+.card-como-funciona p, .card-achando p {
+    font-size: 1vw;
+    line-height: 1.3;
+}
+
+/* Elementos Flutuantes */
+.float-sparkles { position: absolute; top: -10px; left: -10px; width: 4vw; }
+.float-fight-btn { position: absolute; top: 10px; right: 10px; width: 6vw; }
+.float-repel { position: absolute; bottom: -10px; right: 10px; width: 3vw; }
+.float-footprints { position: absolute; top: -20px; right: -10px; width: 5vw; z-index: 5; }
+
+/* Screenshots */
+.img-wrapper-battle { height: 25vh; border-radius: 20px; overflow: hidden; }
+.img-screenshot { width: 100%; height: 100%; object-fit: cover; }
+
+/* Coluna Direita */
+.col-batalha-dir {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.row-superior-batalha {
+    display: flex;
+    gap: 2vw;
+    height: 35vh;
+}
+
+.card-achando { flex: 1; }
+
+.img-wrapper-grama {
+    width: 25vw;
+    position: relative;
+    border-radius: 20px;
+    overflow: visible; /* Para as pegadas aparecerem "saindo" */
+}
+
+.img-wrapper-grama .img-screenshot {
+    border-radius: 20px;
+}
+
+/* Grid de Pokébolas */
+.container-pokeballs-grid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-pokeballs-all {
+    max-height: 35vh;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Ajuste do Título no Header */
+.img-header-chart {
+    height: 12vh;
+    margin-right: 2vw;
+}
