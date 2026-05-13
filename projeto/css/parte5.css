@@ -62,7 +62,7 @@
 .row-superior-batalha {
     display: flex;
     gap: 2vw;
-    height: 35vh;
+    min-height: 35vh;
 }
 
 .card-achando { flex: 1; }

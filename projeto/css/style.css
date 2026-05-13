@@ -91,3 +91,41 @@ h2{
     background: #777;
     border-color: #999;
 }
+
+/* Estilo da seção de contato */
+#contato,
+.tela-contato {
+    background-color: white;
+    border: 4px solid #ff0000;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin: 2rem;
+}
+
+/* Roda pé principal do site */
+.footer-principal {
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 1.5vh 0;
+    width: 100%;
+    font-size: 0.8vw;
+    border-top: 3px solid #ff0000; 
+    margin-right: 15vw; 
+}
+
+.nav-item::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: #ff0000;
+}
+
+h1::first-letter {
+    font-size: 1.2em;
+    color: #ff0000;
+}
+
+.nav-item:focus {
+    outline: 3px dashed #ff0000;
+    outline-offset: 3px;
+}
