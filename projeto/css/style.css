@@ -1,3 +1,10 @@
+.montserrat-fonte {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+}
+
 /* --- Reset Básico --- */
 * {
     margin: 0;
@@ -15,6 +22,8 @@ body {
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
+
+    font-family:"Montserrat", sans-serif;
 }
 
 /* --- Barra Lateral Fixa --- */
@@ -64,9 +73,13 @@ body {
 .conteudo-layout {
     display: flex;
     padding: 4vh 4vw;
-    gap: 3vw;
+    gap: 2vw;
     flex: 1;
     margin-right: 15vw; /* Dá espaço para a barra lateral fixa */
+}
+
+.conteudo-layout > * {
+    min-width: 0;
 }
 
 /* Cards */
@@ -76,10 +89,22 @@ body {
     border-radius: 30px;
     padding: 25px;
     position: relative;
+    min-width: 0;
+}
+
+.card,
+.card p,
+.card h2,
+.map-item,
+.titulo-locomocao,
+.nav-item {
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .historia { width: 35vw; height: 72vh; }
-.historia h2, .curiosidades h2 { font-size: 2.2vw; margin-bottom: 15px; }
+.historia h2, .curiosidades h2 { font-size: 1vw; margin-bottom: 15px; }
 
 .historia p { 
     padding-top: 1vw;
@@ -183,15 +208,13 @@ body {
 .h-icon { height: 10vw; }
 .h-icon-map { height: 14vw; }
 
-.col-regioes, article{
-    p{
-        padding-top: 2vw;
-        font-size: 1.1vw;
-    }
+.col-regioes p {
+    padding-top: 2vw;
+    font-size: 1.1vw;
+}
 
-    h2{
-        font-size: 2.2vw;
-    }
+.col-regioes h2 {
+    font-size: 2.2vw;
 }
 /* Grid de Mapas */
 .col-regioes {
