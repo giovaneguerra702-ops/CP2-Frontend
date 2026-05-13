@@ -91,3 +91,15 @@ h2{
     background: #777;
     border-color: #999;
 }
+
+/* Roda pé principal do site */
+.footer-principal {
+    background-color: white; /* Cinza escuro para combinar com o fundo */
+    color: #000;
+    text-align: center;
+    padding: 1.5vh 0;
+    width: 100%;
+    font-size: 0.8vw;
+    border-top: 3px solid #ff0000; /* Linha vermelha característica */
+    margin-right: 15vw; /* Alinhamento com o conteúdo, respeitando o menu lateral */
+}

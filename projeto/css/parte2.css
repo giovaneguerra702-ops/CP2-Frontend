@@ -10,15 +10,6 @@
 .h-icon { height: 10vw; }
 .h-icon-map { height: 14vw; }
 
-.col-regioes p {
-    padding-top: 2vw;
-    font-size: 1.1vw;
-}
-
-.col-regioes h2 {
-    font-size: 2.2vw;
-}
-
 /* Grid de Mapas */
 .col-regioes {
     width: 50vw;
@@ -95,4 +86,7 @@
     padding: 1vw;
 }
 
-.circle-item img { width: 100%; object-fit: contain; }
+.circle-item img { 
+    width: 100%; 
+    object-fit: contain; 
+}
