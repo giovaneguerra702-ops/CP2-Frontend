@@ -7,8 +7,14 @@
 
 /* --- Ajustes Gerais --- */
 body {
-    background-color: #2F2F2F; /* Cor de fundo principal */
     overflow-x: hidden;
+    background-color: #424242; 
+    background-image: url('../imagens/Rectangle-25.png');
+
+    background-size: 1200px; 
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* --- Barra Lateral Fixa --- */
@@ -36,13 +42,6 @@ body {
     transition: 0.3s;
 }
 
-/* --- Layout da Tela 1 --- */
-.tela-1 {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('./imagens/bg_padrao.png');
-}
 
 .header-pokemon {
     background-color: white;
@@ -173,13 +172,6 @@ body {
 
 
 /* --- Tela 2 Específica --- */
-.tela-2 {
-    height: 100vh;
-    background-color: #2F2F2F;
-    background-image: url("./projeto/imagens/bg_padrao.png");
-    display: flex;
-    flex-direction: column;
-}
 
 /* Ajustes no Header da Tela 2 */
 .header-icons-left, .header-icons-right {
