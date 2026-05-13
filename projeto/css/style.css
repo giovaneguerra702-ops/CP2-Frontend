@@ -51,7 +51,6 @@ body {
     transition: 0.3s;
 }
 
-
 .header-pokemon {
     background-color: white;
     height: 20vh;
@@ -149,8 +148,11 @@ body {
     display: flex;
     gap: 2vw;
     height: 31vh;
+    h1 {
+        font-size: 3vw;
+    }
 }
-    
+
 .grid-jogos { width: 60%; }
 .grid-jogos img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
 

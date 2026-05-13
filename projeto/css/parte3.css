@@ -1,0 +1,71 @@
+/* --- Tela 3 --- */
+.tela-3 {
+    height: 100vh;
+    background-color: #4c4c4c;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container que segura os ícones + a imagem da tabela */
+.tabela-unificada-container {
+    display: flex;
+    align-items: flex-end; /* Alinha a base dos ícones com a base da imagem */
+    gap: 1.5vw;
+    margin-top: 2vh;
+    justify-content: center;
+}
+
+.header-balls-group img {
+    object-fit: contain;
+    height: 10vh;
+}
+
+.ball-lg {
+    width: 10%;
+    height: 100%;
+}
+
+/* Coluna de ícones (Fogo, Grama, Água) */
+.tipos-coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh; /* Ajuste essa altura para os ícones baterem com as linhas da imagem */
+    padding-bottom: 2vh; /* Ajuste fino para alinhar com o centro das linhas da imagem */
+}
+
+.tipos-coluna img {
+    width: 4.5vw;
+}
+
+/* Box da Imagem da Tabela */
+.tabela-imagem-box {
+    flex: 0 1 auto;
+}
+
+.img-tabela-principal {
+    height: 100vh;
+    max-height: 60vh; /* Garante que a tabela não empurre o rodapé para fora */
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Se a imagem já não tiver bordas arredondadas */
+}
+
+/* Rodapé de Informação */
+.info-footer-box {
+    background: white;
+    border: 4px solid #ff4b4b;
+    border-radius: 30px;
+    padding: 2.5vh 4vw;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 3vh;
+    width: 75%;
+    align-self: center;
+}
+
+.info-footer-box p {
+    font-size: 1.4vw;
+    line-height: 1.2;
+    color: #333;
+}
