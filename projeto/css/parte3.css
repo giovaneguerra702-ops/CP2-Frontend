@@ -1,48 +1,33 @@
-/* --- Tela 3 --- */
+#pokemons .conteudo-layout {
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Container que segura os ícones + a imagem da tabela */
 .tabela-unificada-container {
     display: flex;
-    align-items: flex-end; /* Alinha a base dos ícones com a base da imagem */
+    align-items: center;
+    justify-content: center;
     gap: 1.5vw;
     margin-top: 2vh;
-    justify-content: center;
+    width: 100%;
+}
+
+.tabela-unificada-container img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
 }
 
 .header-balls-group img {
     object-fit: contain;
-    height: 10vh;
+    height: 17vh;
 }
 
 .ball-lg {
     width: 10%;
     height: 100%;
-}
-
-/* Coluna de ícones (Fogo, Grama, Água) */
-.tipos-coluna {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50vh; /* Ajuste essa altura para os ícones baterem com as linhas da imagem */
-    padding-bottom: 2vh; /* Ajuste fino para alinhar com o centro das linhas da imagem */
-}
-
-.tipos-coluna img {
-    width: 4.5vw;
-}
-
-/* Box da Imagem da Tabela */
-.tabela-imagem-box {
-    flex: 0 1 auto;
-}
-
-.img-tabela-principal {
-    height: 100vh;
-    max-height: 60vh; /* Garante que a tabela não empurre o rodapé para fora */
-    width: auto;
-    display: block;
-    border-radius: 10px; /* Se a imagem já não tiver bordas arredondadas */
 }
 
 /* Rodapé de Informação */
@@ -52,10 +37,11 @@
     border-radius: 30px;
     padding: 2.5vh 4vw;
     text-align: center;
-    flex-direction: row;
-    margin-top: 3vh;
-    width: 75%;
-    align-self: center;
+    margin-top: 4vh;
+    width: 90%;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-footer-box p {
