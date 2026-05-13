@@ -1,6 +1,6 @@
 /* CSS Para a Parte 1 do codigo (Home)(Pokémon Info Page) */
 
-/* Titulo da Parte 1 */
+/* Titulo da parte */
 .header-ball {
     width: 40vw;
 }
@@ -100,7 +100,7 @@
     width: 7vw; 
 }
 
-/* Ajuste de ícones de energia */
+/*ícones de energia */
 .energia-icons {
     display: flex;
     gap: 10px;
