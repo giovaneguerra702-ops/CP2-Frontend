@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CP2-Front-End</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <nav class="sidebar-nav">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#mundo" class="nav-item">Mundo Pokémon</a>
+        <a href="#pokemons" class="nav-item">Pokémons</a>
+        <a href="#berrys" class="nav-item">Berrys</a>
+        <a href="#batalhas" class="nav-item">Batalhas</a>
+    </nav>
     
+    <section id="home" class="tela-1">
+        <header class="header-pokemon">
+            <img src="./imagens/pokebola.png" alt="Pokebola" class="header-ball" style="margin-left: -15vw;">
+            <div class="header-titles">
+                <p>CP2 Front-End</p>
+                <h1>Pokémon Info Page</h1>
+            </div>
+            <img src="./imagens/pokebola.png" alt="Pokebola" class="header-ball" style="margin-right: -15vw;">
+        </header>
+
+        <div class="conteudo-layout">
+            <article class="card historia">
+                <img src="./imagens/game_boy.png" alt="Gameboy" class="img-flutuante-gb">
+                <h2>História de Criação</h2>
+                <p>A história de Pokémon nasceu da nostalgia de Satoshi Tajiri, um jovem japonês que cresceu caçando insetos nos campos de Machida. Quando a urbanização destruiu esses espaços verdes, Tajiri sonhou em criar um jogo que permitisse às novas gerações vivenciar a alegria de colecionar criaturas. Ao ver o Game Boy da Nintendo, ele teve o estalo genial: usar o cabo de conexão do console não para lutar, mas para que os jogadores pudessem trocar seus monstros entre si, como se estivessem trocando figurinhas ou insetos reais. O desenvolvimento, feito por sua empresa Game Freak, foi um desafio hercúleo que durou seis anos. A equipe enfrentou falências iminentes e falta de recursos, mas contou com o apoio crucial de Shigeru Miyamoto, o criador de Mario, que sugeriu lançar o jogo em duas versões (Red e Green) para incentivar a interação social.</p>
+                <div class="footer-sprites">
+                    <img src="./imagens/pixel_art.png" alt="Sprites">
+                </div>
+            </article>
+
+            <div class="coluna-central">
+                <article class="card curiosidades">
+                    <img src="./imagens/mew.png" alt="Mew" class="img-flutuante-mew">
+                    <h2>Curiosidades</h2>
+                    <p><strong>Mew Secreto:</strong>O Pokémon lendário Mew foi inserido de última hora pelo programador Shigeki Morimoto, sem o conhecimento de muitos na equipe, aproveitando um pequeno espaço livre no cartucho.</p>
+                    <p><strong>Tipos Inexistentes:</strong>No início do desenvolvimento de Pokémon Red & Green, os monstrinhos não tinham os tipos (fogo, água, etc.) que hoje definem as batalhas.</p>
+                    <img src="./imagens/energias.png" alt="Energias" class="img-energias">
+                </article>
+
+                <div class="row-inferior">
+                    <div class="grid-jogos">
+                        <img src="./imagens/jogos.png" alt="Jogos">
+                    </div>
+                    <article class="card pikachu">
+                        <h2>Mais Famoso: <br> Pikachu</h2>
+                        <img src="./imagens/pikachu.png" alt="Pikachu">
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mundo" class="tela-2">
+        <header class="header-pokemon">
+            <div class="header-icons-left">
+                <img src="./imagens/globo.png" alt="Globo" class="h-icon">
+                <img src="./imagens/mapa.png" alt="Mapa" class="h-icon-map">
+            </div>
+            <h1>MUNDO POKEMON</h1>
+            <div class="header-icons-right">
+                <img src="./imagens/corda.png" alt="Corda" class="h-icon">
+                <img src="./imagens/mochila.png" alt="Mochila" class="h-icon">
+            </div>
+        </header>
+
+        <div class="conteudo-layout">
+            <div class="col-regioes">
+                <article class="card regioes-card">
+                    <h2>Regiões</h2>
+                    <p>Divido em regiões, que apresentam ambientes, culturas e pokemons diferentes.O mundo Pokémon é um universo repleto de aventuras, descobertas e amizade entre humanos e criaturas conhecidas como Pokémon. Em diferentes regiões, treinadores viajam por cidades, florestas e montanhas em busca de novos desafios, batalhas e conquistas</p>
+                </article>
+
+                <div class="map-grid">
+                    <div class="map-item">
+                        <img src="./imagens/kanto.png" alt="Kanto">
+                        <span class="map-label">KANTO</span>
+                    </div>
+                    <div class="map-item">
+                        <img src="./imagens/hoenn.png" alt="Hoenn">
+                        <span class="map-label">HOENN</span>
+                    </div>
+                    <div class="map-item">
+                        <img src="./imagens/unova.png" alt="Unova">
+                        <span class="map-label">UNOVA</span>
+                    </div>
+                    <div class="map-item">
+                        <img src="./imagens/sinnoh.png" alt="Sinnoh">
+                        <span class="map-label">SINNOH</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-locomocao">
+                <div class="titulo-locomocao">
+                    Diferentes meios de locomoção
+                </div>
+            
+                <div class="locomocao-grid">
+                    <div class="circle-item"><img src="./imagens/bike.png" alt="Bike"></div>
+                    <div class="circle-item"><img src="./imagens/lapras.png" alt="Lapras"></div>
+                    <div class="circle-item"><img src="./imagens/voo.png" alt="Voo"></div>
+                    <div class="circle-item"><img src="./imagens/montaria.png" alt="Montaria"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
