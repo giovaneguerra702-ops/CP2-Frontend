@@ -1,10 +1,4 @@
 /* --- Tela 3 --- */
-.tela-3 {
-    height: 100vh;
-    background-color: #4c4c4c;
-    display: flex;
-    flex-direction: column;
-}
 
 /* Container que segura os ícones + a imagem da tabela */
 .tabela-unificada-container {
