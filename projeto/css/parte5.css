@@ -1,3 +1,4 @@
+/* CSS Para a Parte 5 do codigo (Batalhas) */
 /* --- Tela 5 (Batalhas) --- */
 .tela-5 {
     height: 100vh;
@@ -11,7 +12,7 @@
     padding: 3vh 4vw;
     gap: 2vw;
     flex: 1;
-    margin-right: 15vw; /* Espaço para a barra lateral fixa */
+    margin-right: 15vw;
 }
 
 /* Coluna Esquerda */
@@ -37,13 +38,13 @@
     line-height: 1.3;
 }
 
-/* Elementos Flutuantes */
+/* Itens de fora*/
 .float-sparkles { position: absolute; top: -10px; left: -10px; width: 4vw; }
 .float-fight-btn { position: absolute; top: 10px; right: 10px; width: 6vw; }
 .float-repel { position: absolute; bottom: -10px; right: 10px; width: 3vw; }
 .float-footprints { position: absolute; top: -20px; right: -10px; width: 5vw; z-index: 5; }
 
-/* Screenshots */
+/* Prints */
 .img-wrapper-battle { height: 25vh; border-radius: 20px; overflow: hidden; }
 .img-screenshot { width: 100%; height: 100%; object-fit: cover; }
 
@@ -67,7 +68,7 @@
     width: 25vw;
     position: relative;
     border-radius: 20px;
-    overflow: visible; /* Para as pegadas aparecerem "saindo" */
+    overflow: visible;
 }
 
 .img-wrapper-grama .img-screenshot {
