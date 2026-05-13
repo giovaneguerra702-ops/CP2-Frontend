@@ -41,7 +41,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('./imagens/bg_padrao.png');
+    background-image: url("../imagens/bg_padrao.png");
 }
 
 .header-pokemon {
@@ -125,8 +125,11 @@ body {
     display: flex;
     gap: 2vw;
     height: 31vh;
+    h1 {
+        font-size: 3vw;
+    }
 }
-    
+
 .grid-jogos { width: 60%; }
 .grid-jogos img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
 
@@ -172,117 +175,3 @@ body {
 .energia-icons img { width: 3vw; }
 
 
-/* --- Tela 2 Específica --- */
-.tela-2 {
-    height: 100vh;
-    background-color: #2F2F2F;
-    background-image: url("./projeto/imagens/bg_padrao.png");
-    display: flex;
-    flex-direction: column;
-}
-
-/* Ajustes no Header da Tela 2 */
-.header-icons-left, .header-icons-right {
-    display: flex;
-    align-items: center;
-    gap: 1.5vw;
-}
-
-.h-icon { height: 10vw; }
-.h-icon-map { height: 14vw; }
-
-.col-regioes, article{
-    p{
-        padding-top: 2vw;
-        font-size: 1.1vw;
-    }
-
-    h2{
-        font-size: 2.2vw;
-    }
-}
-/* Grid de Mapas */
-.col-regioes {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-}
-
-.map-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1vw;
-}
-
-.map-item {
-    position: relative;
-    border: 3px solid #3a8fb7; /* Azul das bordas dos mapas */
-    border-radius: 15px;
-    overflow: hidden;
-    height: 22vh;
-}
-
-.map-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.map-label {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: white;
-    padding: 2px 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 0.9vw;
-}
-
-/* Coluna de Locomoção */
-.col-locomocao {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.titulo-locomocao {
-    background: white;
-    border: 3px solid #ff0000;
-    border-radius: 50px;
-    padding: 1vh 2vw;
-    font-weight: bold;
-    font-size: 1.3vw;
-    margin-bottom: 3vh;
-}
-
-.locomocao-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2vw;
-}
-
-.circle-item {
-    width: 9vw;
-    height: 9vw;
-    background: rgba(255,255,255,0.1); /* Fundo sutil */
-    border: 2px solid #333;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw;
-}
-
-.circle-item img { width: 100%; object-fit: contain; }
-
-/* Card Regiões Sparkles */
-.regioes-card .img-sparkles {
-    position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 10vw;
-}
