@@ -1,18 +1,19 @@
+/* Font do site */
 .montserrat-fonte {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 10;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
 }
 
-/* --- Reset Básico --- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- Ajustes Gerais --- */
+/* Config geral do body */
 body {
     overflow-x: hidden;
     background-color: #424242; 
@@ -26,31 +27,7 @@ body {
     font-family:"Montserrat", sans-serif;
 }
 
-/* --- Barra Lateral Fixa --- */
-.sidebar-nav {
-    position: fixed;
-    right: 2vw;
-    top: 55%; /* Centralizado verticalmente em relação ao conteúdo */
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vh;
-    width: 13vw;
-    z-index: 100; /* Garante que fique acima de tudo */
-}
-
-.nav-item {
-    background: #2F2F2F;
-    color: #fff;
-    text-decoration: none;
-    padding: 2.5vh 1vw;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 1.2vw;
-    border: 3px solid #2F2F2F;
-    transition: 0.3s;
-}
-
+/* Configuração geral para Cabeçalho */
 .header-pokemon {
     background-color: white;
     height: 20vh;
@@ -62,109 +39,34 @@ body {
     font-size: 2.0vw;
 }
 
-.header-ball {
-    width: 40vw;
-}
-
-.header-titles h1 { font-size: 3vw; margin-top: -10px; }
-.header-titles p { font-size: 1.2vw; font-weight: bold; }
-
-.conteudo-layout {
-    display: flex;
-    padding: 4vh 4vw;
-    gap: 2vw;
-    flex: 1;
-    margin-right: 15vw; /* Dá espaço para a barra lateral fixa */
-}
-
-.conteudo-layout > * {
-    min-width: 0;
-}
-
-/* Cards */
-.card {
-    background: white;
-    border: 4px solid #ff0000;
-    border-radius: 30px;
-    padding: 25px;
-    position: relative;
-    min-width: 0;
-}
-
-.card,
-.card p,
-.card h2,
-.map-item,
-.titulo-locomocao,
-.nav-item {
-    overflow-wrap: anywhere;
-    word-wrap: break-word;
-    word-break: break-word;
-}
-
-.historia { width: 35vw; height: 72vh; }
-.historia h2, .curiosidades h2 { font-size: 1vw; margin-bottom: 15px; }
-
-.historia p { 
+/* Configuração geral para Texto */
+p{
+    font-size: 1vw; 
     padding-top: 1vw;
-    font-size: 1.1vw; 
-    line-height: 1.3;
+    line-height: 1.5vw;
 }
 
-.footer-sprites {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
+h1{
+    font-size: 3vw;
 }
 
-.footer-sprites img { width: 100%; }
+h2{
+    font-size: 1.5vw
+}
 
-/* Coluna Central */
-.coluna-central {
+/* Config da barra de nvegação lateral */
+.sidebar-nav {
+    position: fixed;
+    right: 2vw;
+    top: 55%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 6vh;
-    flex: 1;
+    gap: 1.5vh;
+    width: 13vw;
+    z-index: 100;
 }
 
-.curiosidades { height: 35vh; }
-
-.curiosidades p { 
-    padding-top: 1vw;
-    font-size: 1.1vw; 
-    margin-bottom: 10px; 
-}
-
-.img-energias {
-    position: absolute;
-    bottom: -60px;
-    right: 200px;
-    width: 15vw; /* Ajuste conforme o tamanho da sua imagem */
-}
-
-.row-inferior {
-    display: flex;
-    gap: 2vw;
-    height: 31vh;
-    h1 {
-        font-size: 3vw;
-    }
-}
-
-.grid-jogos { width: 60%; }
-.grid-jogos img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
-
-.pikachu { width: 40%; text-align: center; }
-.pikachu h2 { font-size: 1.5vw; }
-.pikachu img { width: 65%; margin-top: 10px; }
-
-/* Imagens Flutuantes */
-.img-flutuante-gb { position: absolute; right: 30px; top: -80px; width: 7vw; }
-.img-flutuante-mew { position: absolute; right: -20px; top: -30px; width: 7vw; }
-
-/* Barra Lateral (Menu) */
 .sidebar-nav {
     display: flex;
     flex-direction: column;
@@ -184,15 +86,7 @@ body {
     transition: 0.3s;
 }
 
-.nav-item.active, .nav-item:hover {
+.nav-item:hover {
     background: #777;
     border-color: #999;
 }
-
-/* Ajuste de ícones de energia */
-.energia-icons {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
-.energia-icons img { width: 3vw; }

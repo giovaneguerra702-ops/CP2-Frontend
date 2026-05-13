@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP2-Front-End</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/parte1.css">
     <link rel="stylesheet" href="./css/parte2.css">
     <link rel="stylesheet" href="./css/parte3.css">
+    <link rel="stylesheet" href="./css/parte4.css">
+    <link rel="stylesheet" href="./css/parte5.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
 </head>
 <body>
+    <!-- Barra de navegação -->
     <nav class="sidebar-nav">
         <a href="#home" class="nav-item active">Home</a>
         <a href="#mundo" class="nav-item">Mundo Pokémon</a>
@@ -20,8 +24,10 @@
         <a href="#berrys" class="nav-item">Berrys</a>
         <a href="#batalhas" class="nav-item">Batalhas</a>
     </nav>
-    
-    <section id="home" class="tela-1">
+
+    <!-- Parte 1 (Home)(Pokémon Info Page) -->
+    <section id="home" class="parte1">
+        <!-- Cabeçalho Parte 1 -->
         <header class="header-pokemon">
             <img src="./imagens/pokebola.png" alt="Pokebola" class="header-ball" style="margin-left: -15vw;">
             <div class="header-titles">
@@ -31,6 +37,7 @@
             <img src="./imagens/pokebola.png" alt="Pokebola" class="header-ball" style="margin-right: -15vw;">
         </header>
 
+        <!-- Conteudo Parte 1 -->
         <div class="conteudo-layout">
             <article class="card historia">
                 <img src="./imagens/game_boy.png" alt="Gameboy" class="img-flutuante-gb">
@@ -55,7 +62,7 @@
                         <img src="./imagens/jogos.png" alt="Jogos">
                     </div>
                     <article class="card pikachu">
-                        <h2>Mais Famoso: <br> Pikachu</h2>
+                        <h2>Mais Famoso: Pikachu<h2>
                         <img src="./imagens/pikachu.png" alt="Pikachu">
                     </article>
                 </div>
@@ -121,22 +128,114 @@
     <section id="pokemons" class="tela-3">
         <header class="header-pokemon">
             <div class="header-balls-group">
-                <img src="../projeto/imagens/pokebolas_esquerda.png" alt="pokebolas_esquerda">
+                <img src="./imagens/pokeballs-l.png" alt="pokebolas_esquerda">
             </div>
             <h1>Pokémons Iniciais</h1>
             <div class="header-balls-group">
-                <img src="imagens/pokebolas_direita.png" alt="pokebolas_direita">
+                <img src="./imagens/pokeballs-r.png" alt="pokebolas_direita">
             </div>
         </header>
 
         <div class="conteudo-layout">
             <div class="tabela-unificada-container">
-                <img src="../projeto/imagens/pokemons_iniciais.png" alt="pokemons_iniciais">
+                <img src="./imagens/pokemons.png" alt="pokemons_iniciais">
             </div>
 
             <footer class="info-footer-box">
                 <p>Para a sua jornada Pokemon é importante ter um companheiro ao seu lado, sera oferecido um “inicial” para embarcar em seu aventura</p>
             </footer>
+        </div>
+    </section>
+
+    <section id="berrys" class="tela-4">
+        <header class="header-pokemon header-berrys">
+            <div class="berry-cluster left">
+                <img src="./imagens/berry_top_l.png" alt="Berrys">
+            </div>
+            <h1>Berrys</h1>
+            <div class="berry-cluster right">
+                <img src="./imagens/berry_top_r.png" alt="Berrys">
+            </div>
+        </header>
+
+        <div class="conteudo-layout">
+            <div class="col-textos-berrys">
+                <article class="card card-intro-berrys">
+                    <p>No universo de Pokémon, as Berrys são frutas especiais utilizadas por treinadores para ajudar seus Pokémon durante batalhas e jornadas. Cada Berry possui um efeito diferente, podendo restaurar vida, curar condições negativas ou até aumentar atributos em combate.</p>
+                    <p>Além de seu uso estratégico nas batalhas, as Berrys também podem ser cultivadas pelos treinadores em fazendas e jardins espalhados pelo mundo Pokémon. Isso torna a coleta e o plantio uma parte importante da aventura, incentivando os jogadores a explorarem diferentes regiões em busca de novas variedades.</p>
+                    <img src="./imagens/arvore.png" alt="Árvore" class="img-arvore-berry">
+                </article>
+
+                <div class="lista-berry-container">
+                    <div class="icones-lista-lateral">
+                        <img src="./imagens/frutas.png" alt="Oran">
+                    </div>
+                    <article class="card card-lista-berrys">
+                        <h3>Algumas das mais conhecidas são:</h3>
+                        <ul>
+                            <li><strong>Oran Berrys</strong>, que recuperam pontos de vida</li>
+                            <li><strong>Pecha Berrys</strong>, usadas para curar envenenamento.</li>
+                            <li><strong>Sitrus Berry</strong> restauram uma quantidade maior de vida</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+
+            <div class="col-imagens-berrys">
+                <div class="card card-grid-berries">
+                    <img src="./imagens/catalogo.png" alt="Grid de Berries" class="img-full-card">
+                </div>
+                
+                <div class="campo-cultivo-wrapper">
+                    <img src="./imagens/pa.png" alt="Pá" class="img-pa-flutuante">
+                    <div class="card-img-campo">
+                        <img src="./imagens/palntacao.png" alt="Campo de Berries" class="img-full-card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="batalhas" class="tela-5">
+        <header class="header-pokemon">
+            <h1>Batalha</h1>
+            <img src="./imagens/fraqueza.png" alt="Tabela de Tipos" class="img-header-chart">
+        </header>
+
+        <div class="conteudo-layout-batalha">
+            <div class="col-batalha-esq">
+                <article class="card card-como-funciona">
+                    <img src="./imagens/brilho.png" class="float-sparkles">
+                    <img src="./imagens/batalhar.png" class="float-fight-btn">
+                    <h2>Como Funciona</h2>
+                    <p>As batalhas Pokémon nos jogos da série principal são regidas por um sistema de turnos altamente estratégico que combina matemática, lógica de tipos e previsão de movimentos...</p>
+                    <p>A ordem em que os Pokémon agem é determinada principalmente pela estatística de Velocidade (Speed)...</p>
+                </article>
+                
+                <div class="img-wrapper-battle">
+                    <img src="./imagens/batalha.png" alt="Pikachu em Batalha" class="img-screenshot">
+                </div>
+            </div>
+
+            <div class="col-batalha-dir">
+                <div class="row-superior-batalha">
+                    <article class="card card-achando">
+                        <h2>Achando Pokemons</h2>
+                        <p>Encontrar Pokémon nos jogos RPG envolve explorar áreas específicas como grama alta, cavernas e água.</p>
+                        <p>É possível usar itens como incenso ou repelentes para controlar encontros.</p>
+                        <img src="./imagens/repelente.png" class="float-repel">
+                    </article>
+
+                    <div class="img-wrapper-grama">
+                        <img src="./imagens/pegada.png" class="float-footprints">
+                        <img src="./imagens/treinador_grama.png" alt="Grama Alta" class="img-screenshot">
+                    </div>
+                </div>
+
+                <div class="container-pokeballs-grid">
+                    <img src="./imagens/pokebolas.png" alt="Coleção de Pokébolas" class="img-pokeballs-all">
+                </div>
+            </div>
         </div>
     </section>
 </body>
